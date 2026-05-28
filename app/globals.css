@@ -1,0 +1,531 @@
+/* =========================================
+   GLOBAL CSS — EM-RENOV
+   Palette : Luxe Moderne
+========================================= */
+
+:root{
+  /* ===== COLORS ===== */
+
+  --primary-color: #181818;
+  --secondary-color: #D4A373;
+
+  --background: #F8F5F0;
+  --foreground: #2D2D2D;
+
+  --white-color: #FFFFFF;
+
+  --title-color: #111111;
+  --text-color: #555555;
+
+  --border-color: #E7E7E7;
+
+  --section-bg: #F1ECE5;
+
+  /* ===== EFFECTS ===== */
+
+  --shadow:
+    0 5px 20px rgba(0,0,0,0.08);
+
+  --transition: 0.4s ease;
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+   scroll-behavior: auto;
+  height: 100%;
+}
+
+html,
+body{
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body{
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+ background-color: white;
+ 
+
+  font-family: var(--font-montserrat);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea{
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+button{
+  cursor: pointer;
+}
+
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: var(--font-poppins);
+
+  color: var(--title-color);
+
+  line-height: 1.2;
+}
+
+h1{
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+h2{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h3{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+p{
+  color: var(--text-color);
+
+  line-height: 1.8;
+
+  font-size: 1rem;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container{
+  width: 90%;
+  max-width: 1300px;
+
+  margin: auto;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+section{
+  padding: 100px 0;
+}
+
+.section_bg{
+  background: var(--section-bg);
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 32px;
+
+  background: var(--secondary-color);
+  color: var(--white-color);
+
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 1rem;
+
+  transition: var(--transition);
+}
+
+.btn:hover{
+  transform: translateY(-4px);
+
+  opacity: 0.9;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.card{
+  background: var(--white-color);
+
+  border-radius: 18px;
+
+  box-shadow: var(--shadow);
+
+  padding: 30px;
+}
+
+
+/* =========================================
+   IMAGE EFFECT
+========================================= */
+
+.image_hover{
+  overflow: hidden;
+
+  border-radius: 18px;
+}
+
+.image_hover img{
+  transition: var(--transition);
+}
+
+.image_hover:hover img{
+  transform: scale(1.05);
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+nav{
+  width: 100%;
+
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+
+  background: rgba(255,255,255,0.85);
+
+  backdrop-filter: blur(10px);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav_container{
+  width: 90%;
+  max-width: 1300px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  font-size: 1.7rem;
+  font-weight: 800;
+
+  color: var(--primary-color);
+
+  font-family: var(--font-poppins);
+}
+
+.nav_menu{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav_link{
+  position: relative;
+
+  font-weight: 500;
+
+  transition: var(--transition);
+}
+
+.nav_link::after{
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0%;
+  height: 2px;
+
+  background: var(--secondary-color);
+
+  transition: var(--transition);
+}
+
+.nav_link:hover::after{
+  width: 100%;
+}
+
+.nav_btn{
+  display: none;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero{
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  padding-top: 90px;
+}
+
+.hero_content{
+  max-width: 700px;
+}
+
+.hero_title{
+  margin-bottom: 20px;
+}
+
+.hero_text{
+  margin-bottom: 35px;
+
+  max-width: 600px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer{
+  background: var(--primary-color);
+
+  color: white;
+
+  padding: 80px 0 30px;
+}
+
+.footer_container{
+  width: 90%;
+  max-width: 1300px;
+
+  margin: auto;
+}
+
+.footer_title{
+  color: white;
+
+  margin-bottom: 20px;
+}
+
+.footer_text{
+  color: #d1d1d1;
+}
+
+.footer_bottom{
+  margin-top: 50px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255,255,255,0.1);
+
+  text-align: center;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: #ececec;
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--secondary-color);
+
+  border-radius: 20px;
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+@media (prefers-color-scheme: dark){
+
+  :root{
+    --background: #0F0F0F;
+    --foreground: #F5F5F5;
+
+    --title-color: #FFFFFF;
+    --text-color: #D6D6D6;
+
+    --section-bg: #151515;
+
+    --border-color: #222222;
+  }
+
+  html{
+    color-scheme: dark;
+  }
+
+  nav{
+    background: rgba(20,20,20,0.85);
+  }
+
+  .card{
+    background: #1A1A1A;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media screen and (max-width: 992px){
+
+  h1{
+    font-size: 3rem;
+  }
+
+  h2{
+    font-size: 2.4rem;
+  }
+
+  .nav_menu{
+    gap: 20px;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+
+  section{
+    padding: 80px 0;
+  }
+
+  h1{
+    font-size: 2.5rem;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  h3{
+    font-size: 1.5rem;
+  }
+
+  p{
+    font-size: 0.95rem;
+  }
+
+  .nav_menu{
+    position: fixed;
+
+    top: 0;
+    right: -100%;
+
+    width: 280px;
+    height: 100vh;
+
+    background: var(--white-color);
+
+    flex-direction: column;
+    justify-content: center;
+
+    transition: var(--transition);
+  }
+
+  .nav_menu.active{
+    right: 0;
+  }
+
+  .nav_btn{
+    display: block;
+
+    font-size: 2rem;
+
+    background: transparent;
+
+    color: var(--primary-color);
+  }
+
+  .hero{
+    text-align: center;
+  }
+
+  .hero_content{
+    margin: auto;
+  }
+}
+
+
+@media screen and (max-width: 480px){
+
+  h1{
+    font-size: 2rem;
+  }
+
+  h2{
+    font-size: 1.6rem;
+  }
+
+  h3{
+    font-size: 1.2rem;
+  }
+
+  .container{
+    width: 92%;
+  }
+
+  .btn{
+    width: 100%;
+  }
+}

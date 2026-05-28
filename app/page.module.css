@@ -1,0 +1,620 @@
+.main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 60px;
+}
+
+.first_container{
+    background-image:  linear-gradient( rgba(0,0,0,0.5)), url('/Maison2Plateau/VILLA1-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.big_title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+/* texte */
+.big_text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* bouton lien */
+.link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #b85c38; /* couleur rénovation (terre / bois) */
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.link:hover {
+  background: #8f4326;
+  transform: translateY(-2px);
+}
+
+
+.second_container{
+  width: 100%;
+  height: 100vh;
+  background: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+.content,
+.text {
+    width: 50%;
+    height: 100%;
+}
+
+/* IMAGE BLOCK */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    
+}
+
+/* IMAGE */
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* TEXTE */
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: red;
+}
+
+.desc {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #222;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.third_container{
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.list{
+   font-size: 1.3rem;
+    font-weight: 800;
+    color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    gap: 35px;
+}
+
+.list_box{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon{
+  color: black;
+  font-size: 1.2rem;
+}
+
+
+.fourth_container{
+  
+  width: 100%;
+  height: 100vh;
+  background: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 90%;
+    
+}
+
+/* IMAGE */
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+.fifth_container{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background:white;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.fifth_box{
+  width: 20%;
+  min-height: 330px;
+
+  padding: 35px 25px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.95),
+    rgba(248,248,248,0.95)
+  );
+
+  border-radius: 30px;
+
+  border: 1px solid rgba(255,255,255,0.8);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 22px;
+
+  position: relative;
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.05),
+    inset 0 1px 1px rgba(255,255,255,0.7);
+
+  transition: all 0.45s ease;
+}
+
+/* Lumière décorative */
+.fifth_box::before{
+  content: "";
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  background: rgba(255,0,0,0.06);
+
+  border-radius: 50%;
+
+  top: -70px;
+  right: -70px;
+
+  transition: 0.5s ease;
+}
+
+/* Barre premium */
+.fifth_box::after{
+  content: "";
+  position: absolute;
+
+  bottom: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 70%;
+  height: 4px;
+
+  background: linear-gradient(
+    to right,
+    #ff3c00,
+    #ff9500
+  );
+
+  border-radius: 50px;
+
+  transition: 0.4s ease;
+}
+
+.fifth_box:hover{
+  transform: translateY(-12px) scale(1.02);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.12);
+}
+
+.fifth_box:hover::before{
+  transform: scale(1.3);
+}
+
+.fifth_box:hover::after{
+  width: 90%;
+}
+
+/* ICON */
+.fifth_icon{
+  width: 75px;
+  height: 75px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #ff3c00,
+    #ff9500
+  );
+
+  color: white;
+  font-size: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 10px 25px rgba(255,60,0,0.3);
+
+  transition: 0.4s ease;
+}
+
+.fifth_box:hover .fifth_icon{
+  transform: rotate(8deg) scale(1.08);
+}
+
+/* TITRE / TEXTE */
+.fifth_desc{
+  color: #111;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  text-align: center;
+  line-height: 1.7;
+
+  width: 90%;
+}
+
+.final_container{
+    background-image:  linear-gradient( rgba(0,0,0,0.5)), url('/Autres/O1-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.big_title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+/* texte */
+.big_text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* bouton lien */
+.link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #b85c38; /* couleur rénovation (terre / bois) */
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.link:hover {
+  background: #8f4326;
+  transform: translateY(-2px);
+}
+
+/* ===================== MOBILE ===================== */
+
+@media screen and (max-width:780px) {
+ .first_container{
+    height: 70vh;
+  }
+  
+  .second_container,
+  .third_container,
+  .fourth_container,
+  .final_container{
+    width: 100%;
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  /* HERO */
+
+  .big_title{
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .big_text{
+    font-size: 1rem;
+    width: 95%;
+  }
+
+  .link{
+    font-size: 1rem;
+    width: 40%;
+  }
+
+  /* SECTION */
+
+  .second_container,
+  .third_container,
+  .fourth_container{
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content,
+  .text{
+    width: 100%;
+    height: auto;
+  }
+
+  .content{
+    width: 100%;
+  }
+
+  .img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
+
+  .text{
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .title{
+    font-size: 2rem;
+  }
+
+  .desc{
+    width: 100%;
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 500;
+  }
+
+  /* LISTE */
+
+  .list{
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1rem;
+  }
+
+  .list_box{
+    width: 45%;
+  }
+
+  .icon{
+    font-size: 1.5rem;
+  }
+
+  .fifth_container{
+  flex-wrap: wrap;
+  height: auto;
+  position: relative;
+  gap: 35px;
+}
+
+.fifth_box{
+  width: 40%;
+}
+
+}
+
+
+/* ===================== TABLET ===================== */
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+
+  .first_container{
+    height: 70vh;
+  }
+
+
+  .second_container,
+  .third_container,
+  .fourth_container,
+  .final_container{
+    padding: 60px 40px;
+    height: auto;
+  }
+
+  .big_title{
+    font-size: 3rem;
+  }
+
+  .big_text{
+    font-size: 1.3rem;
+    width: 80%;
+  }
+
+  .second_container,
+  .third_container,
+  .fourth_container{
+    gap: 40px;
+    align-items: center;
+  }
+
+  .content{
+    width: 45%;
+    height: auto;
+  }
+
+  .text{
+    width: 50%;
+  }
+
+  .img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .title{
+    font-size: 2.2rem;
+  }
+
+  .desc{
+    max-width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    font-weight: 500;
+  }
+
+  
+    .link{
+    font-size: 1rem;
+    width: 40%;
+  
+  }
+
+  .list{
+    gap: 25px;
+    font-size: 1.1rem;
+    justify-content: center;
+  }
+
+  .list_box{
+    width: 30%;
+  }
+
+  .icon{
+    font-size: 1.6rem;
+  }
+
+   .fifth_container{
+  flex-wrap: wrap;
+  height: auto;
+  position: relative;
+  gap: 35px;
+}
+
+.fifth_box{
+  width: 40%;
+}
+
+}
+
+
+/* ===================== PETIT MOBILE ===================== */
+
+@media screen and (max-width:480px) {
+
+  .big_title{
+    font-size: 1.7rem;
+  }
+
+  .big_text{
+    font-size: 0.95rem;
+  }
+
+  .title{
+    font-size: 1.6rem;
+  }
+
+  .desc{
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .img{
+    height: 250px;
+  }
+
+  .link{
+    width: 100%;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .list{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .list_box{
+    width: 100%;
+  }
+
+}

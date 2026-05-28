@@ -1,0 +1,165 @@
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f8f8f8;
+}
+
+/* HERO */
+
+.hero{
+    width: 100%;
+    min-height: 35vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 120px 20px 60px;
+}
+
+.big_title{
+    font-size: 3rem;
+    color: brown;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.desc{
+    width: 60%;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* CONTAINER */
+
+.container{
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px;
+    padding: 40px 8%;
+    box-sizing: border-box;
+}
+
+/* CARD */
+
+.box{
+    width: 100%;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
+}
+
+.box:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+
+.imageContainer{
+    width: 100%;
+    overflow: hidden;
+}
+
+.img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+
+    transition: 0.4s ease;
+}
+
+.box:hover .img{
+    transform: scale(1.05);
+}
+
+/* CONTENT */
+
+.cardContent{
+    padding: 22px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title{
+    font-size: 1.4rem;
+    color: #222;
+    font-weight: 700;
+}
+
+.place{
+    font-size: 0.95rem;
+    color: #777;
+}
+
+/* BUTTON */
+
+.link{
+    width: fit-content;
+
+    padding: 12px 20px;
+
+    background: whitesmoke;
+    color: brown;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.link:hover{
+    background: black;
+    color: red;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px){
+
+    .big_title{
+        font-size: 2.2rem;
+    }
+
+    .desc{
+        width: 90%;
+    }
+
+    .container{
+        padding: 30px 5%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .big_title{
+        font-size: 1.8rem;
+    }
+
+    .img{
+        height: 220px;
+    }
+
+    .title{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "slug": "renov-bureau",
+    "category": "aménagement intérieur",
+    "projects": [
+      {
+        "id": 1,
+        "picture": "/Bureau/B1-1.jpg"
+      },
+      {
+        "id": 2,
+        "picture": "/Bureau/B1-2.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "renov-villa",
+    "category": "renovation",
+    "projects": [
+      {
+        "id": 1,
+        "picture": "/Maison2Plateau/VILLA1-1.jpg"
+      },
+      {
+        "id": 2,
+        "picture": "/Maison2Plateau/VILLA1-2.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "renov-maison",
+    "category": "renovation",
+    "projects": [
+      {
+        "id": 1,
+        "picture": "/MaisonGolf/VILL1-1.jpg"
+      },
+      {
+        "id": 2,
+        "picture": "/MaisonGolf/VILL1-2.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "renov-basse",
+    "category": "renovation",
+    "projects": [
+      {
+        "id": 1,
+        "picture": "/VillaBasse/PE1-1.jpg"
+      },
+      {
+        "id": 2,
+        "picture": "/VillaBasse/PE1-2.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "renov-magasin",
+    "category": "renovation",
+    "projects": [
+      {
+        "id": 1,
+        "picture": "/Autres/O4-1.jpg"
+      },
+      {
+        "id": 2,
+        "picture": "/Autres/O4-2.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "deco-inte",
+    "category": "amenagement interieur",
+    "projects": [
+      {
+        "id": 1,
+        "picture": "/Autres/O1-1.jpg"
+      },
+      {
+        "id": 2,
+        "picture": "/Autres/O1-2.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "deco-inte2",
+    "category": "amenagement interieur",
+    "projects": [
+      {
+        "id": 1,
+        "picture": "/Autres/O2-1.jpg"
+      },
+      {
+        "id": 2,
+        "picture": "/Autres/O2-2.jpg"
+      }
+    ]
+  }
+]
