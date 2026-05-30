@@ -76,7 +76,7 @@ export default function Home() {
         <section className={styles.third_container}>
           <div className={styles.content}>
                       <Image
-  src={"/fondMain3.png"}
+  src={"/fondMain3.jpeg"}
   alt="imageLogo"
   width={800}
   height={600}

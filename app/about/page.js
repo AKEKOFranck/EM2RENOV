@@ -23,7 +23,7 @@ export default function About() {
             id:3,
             title:"Assistance à maître d'ouvrage",
             desc:"Discipline d’accompagnement et de conseil qui aide le maître d’ouvrage (client) à définir, piloter et réussir son projet de construction ou de rénovation. L’AMO intervient en amont et pendant le chantier pour garantir la conformité, la qualité, les délais et le budget, sans réaliser elle-même les travaux. Points clés : Conseil stratégique : Aide à la définition du programme, des besoins et des objectifs. Coordination des intervenants : Interface entre le client, les architectes, les bureaux d’études et les entreprises. Gestion administrative et technique : Suivi des appels d’offres, analyse des devis, contrôle de l’avancement des travaux. Respect de la réglementation : Vérification de la conformité aux normes (urbanisme, accessibilité, environnement, etc.). Optimisation budgétaire et calendaire : Prévention des risques, gestion des aléas et proposition de solutions adaptées. L’AMO assure ainsi une vision neutre et experte, permettant au maître d’ouvrage de prendre des décisions éclairées et de sécuriser son projet.",
-            img:"/fondS3.png"
+            img:"/fondS3.jpg"
         },
 
          {
